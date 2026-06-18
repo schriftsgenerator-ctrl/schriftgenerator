@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- URL Principal (Página Inicial / Canônica) -->
   <url>
-    <loc>https://schriftsgenerator-ctrl.github.io/schriftgenerator/</loc>
+    <loc>https://schriftgenerator-pearl.vercel.app/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
