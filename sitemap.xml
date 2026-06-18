@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- URL Principal (Página Inicial / Canônica) -->
+  <url>
+    <loc>https://letrasdifferents-a11y.github.io/letrasdiferentes/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Página de Letras Diferentes FF -->
+  <url>
+    <loc>https://letrasdifferentes.com/letras-diferentes-ff/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Página de Fontes para Instagram -->
+  <url>
+    <loc>https://letrasdifferentes.com/fontes-para-instagram/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

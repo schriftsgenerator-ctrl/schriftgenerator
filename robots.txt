@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Mapeamento do arquivo de Sitemap para os motores de busca
+Sitemap: https://letrasdifferents-a11y.github.io/letrasdiferentes/sitemap.xml
