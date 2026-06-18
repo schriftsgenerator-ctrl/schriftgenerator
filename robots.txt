@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Mapeamento do arquivo de Sitemap para os motores de busca
-Sitemap: https://schriftsgenerator-ctrl.github.io/schriftgenerator/sitemap.xml
+Sitemap: https://schriftgenerator-pearl.vercel.app/sitemap.xml
