@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unicode-Schriftarten im Überblick: 17 Stile im Vergleich | Zeichenwerk</title>
+<meta name="description" content="Fett, Kursiv, Fraktur, Schreibschrift & mehr: alle 17 Unicode-Stile mit Beispiel, Lesbarkeit und typischem Einsatz im direkten Vergleich.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schriftgenerator-pearl.vercel.app/schriftarten/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3a2f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23f3c969'%3EZ%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Unicode-Schriftarten im Überblick: 17 Stile im Vergleich | Zeichenwerk">
+<meta property="og:description" content="Fett, Kursiv, Fraktur, Schreibschrift & mehr: alle 17 Unicode-Stile mit Beispiel, Lesbarkeit und typischem Einsatz im direkten Vergleich.">
+<meta property="og:url" content="https://schriftgenerator-pearl.vercel.app/schriftarten/">
+<meta property="og:site_name" content="Zeichenwerk">
+<meta name="theme-color" content="#1d3a2f">
+<style>
+:root{--bg:#f7f4ee;--card:#fffdf9;--ink:#1c1f1d;--muted:#5d655f;--line:#e2ddd2;--accent:#1d3a2f;--accent-2:#c8902b;--soft:#eef2ec;--radius:14px}
+@media (prefers-color-scheme:dark){:root{--bg:#121513;--card:#1a1e1b;--ink:#ecefe9;--muted:#a3aba5;--line:#2c322e;--accent:#9fd1b5;--accent-2:#f3c969;--soft:#1f2621}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent-2)}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+header.site{border-bottom:1px solid var(--line);background:var(--card)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none}
+.logo span{color:var(--accent-2)}
+nav ul{display:flex;flex-wrap:wrap;gap:4px 18px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a[aria-current=page]{color:var(--ink);font-weight:600}
+main{padding:32px 0 48px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.2;margin:0 0 12px}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.3;margin:44px 0 10px}
+h3{font-size:1.1rem;margin:26px 0 6px}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 24px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.tool label{font-weight:600;display:block;margin-bottom:6px}
+.tool textarea{width:100%;min-height:84px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:var(--bg);color:var(--ink)}
+.tool textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.hint{font-size:.88rem;color:var(--muted);margin:8px 0 0}
+.results{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.results li{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg)}
+.results .name{font-size:.78rem;color:var(--muted);min-width:110px}
+.results .out{flex:1;font-size:1.15rem;word-break:break-word;min-width:0}
+.results button{border:0;background:var(--accent);color:var(--card);border-radius:8px;padding:7px 12px;font:600 .85rem system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.results button.ok{background:var(--accent-2);color:#1c1f1d}
+@media (max-width:560px){.results li{flex-wrap:wrap}.results .name{min-width:100%}}
+.box{background:var(--soft);border-radius:var(--radius);padding:16px 18px;margin:20px 0}
+.box p:first-child{margin-top:0}.box p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+.tablewrap{overflow-x:auto}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.85rem;color:var(--muted);font-weight:600}
+.cta{display:inline-block;background:var(--accent);color:var(--card);padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;margin:6px 0}
+.cta:hover{color:var(--card);opacity:.92}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--ink)}
+.grid a strong{display:block;margin-bottom:4px}
+.grid a span{color:var(--muted);font-size:.92rem}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600}
+ol li,ul li{margin:4px 0}
+footer.site{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;background:var(--card)}
+footer.site ul{list-style:none;padding:0;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/">Zeichen<span>werk</span></a>
+<nav aria-label="Hauptnavigation"><ul><li><a href="/">Generator</a></li><li><a href="/schriftarten/" aria-current="page">Schriftarten</a></li><li><a href="/anleitung/">Anleitung</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/ueber/">Über das Projekt</a></li></ul></nav>
+</div></header>
+<main><div class="wrap">
+
+<h1>Unicode-Schriftarten im Überblick</h1>
+<p class="lead">Alle 17 Stile aus dem <a href="/">Schriftgenerator</a> nebeneinander – mit ehrlicher Einschätzung, wie gut sie sich lesen lassen und wofür sie taugen.</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>Stil</th><th>Beispiel</th><th>Lesbarkeit</th><th>Typischer Einsatz</th><th>Hinweis</th></tr></thead>
+<tbody><tr><td>Fett (Serif)</td><td>𝐒𝐜𝐡𝐫𝐢𝐟𝐭</td><td>sehr gut</td><td>Wichtige Begriffe in langen Captions</td><td>Ziffern verfügbar</td></tr><tr><td>Kursiv (Serif)</td><td>𝑆𝑐ℎ𝑟𝑖𝑓𝑡</td><td>gut</td><td>Zitate, Buchtitel, leise Betonung</td><td>keine Ziffern</td></tr><tr><td>Fett kursiv</td><td>𝑺𝒄𝒉𝒓𝒊𝒇𝒕</td><td>gut</td><td>Slogans, kurze Claims</td><td>keine Ziffern</td></tr><tr><td>Fett (Sans)</td><td>𝗦𝗰𝗵𝗿𝗶𝗳𝘁</td><td>sehr gut</td><td>Namen in der Bio, Überschriften</td><td>Ziffern verfügbar</td></tr><tr><td>Kursiv (Sans)</td><td>𝘚𝘤𝘩𝘳𝘪𝘧𝘵</td><td>gut</td><td>moderne, lockere Hervorhebung</td><td>keine Ziffern</td></tr><tr><td>Fett kursiv (Sans)</td><td>𝙎𝙘𝙝𝙧𝙞𝙛𝙩</td><td>gut</td><td>Call-to-Actions wie „Link in der Bio“</td><td>keine Ziffern</td></tr><tr><td>Schreibschrift</td><td>𝒮𝒸𝒽𝓇𝒾𝒻𝓉</td><td>mittel</td><td>Beauty, Hochzeit, persönliche Profile</td><td>nur kurze Wörter</td></tr><tr><td>Schreibschrift fett</td><td>𝓢𝓬𝓱𝓻𝓲𝓯𝓽</td><td>mittel</td><td>Markennamen mit eleganter Note</td><td>nur kurze Wörter</td></tr><tr><td>Fraktur</td><td>𝔖𝔠𝔥𝔯𝔦𝔣𝔱</td><td>eher schwer</td><td>Gaming, Tattoo, Metal, Mittelalter</td><td>Großbuchstaben schwer lesbar</td></tr><tr><td>Fraktur fett</td><td>𝕾𝖈𝖍𝖗𝖎𝖋𝖙</td><td>eher schwer</td><td>auffällige Nicknames</td><td>sparsam einsetzen</td></tr><tr><td>Doppelstrich</td><td>𝕊𝕔𝕙𝕣𝕚𝕗𝕥</td><td>gut</td><td>Nischen-Begriffe in der Bio</td><td>Ziffern verfügbar</td></tr><tr><td>Schreibmaschine</td><td>𝚂𝚌𝚑𝚛𝚒𝚏𝚝</td><td>sehr gut</td><td>Tech, Discord-Kanäle, Listen</td><td>Ziffern verfügbar</td></tr><tr><td>Kapitälchen</td><td>sᴄʜʀɪꜰᴛ</td><td>gut</td><td>Untertitel, dezente Labels</td><td>Umlaute fallen kaum auf</td></tr><tr><td>Eingekreist</td><td>Ⓢⓒⓗⓡⓘⓕⓣ</td><td>mittel</td><td>Nummerierungen, verspielte Akzente</td><td>Ziffern 0–9 verfügbar</td></tr><tr><td>Breit (Vollbreite)</td><td>Ｓｃｈｒｉｆｔ</td><td>gut</td><td>Aesthetic- und Retro-Look</td><td>nimmt viel Platz ein</td></tr><tr><td>Unterstrichen</td><td>S̲c̲h̲r̲i̲f̲t̲</td><td>gut</td><td>Betonung auch bei Umlauten</td><td>Linie je nach App leicht versetzt</td></tr><tr><td>Durchgestrichen</td><td>S̶c̶h̶r̶i̶f̶t̶</td><td>gut</td><td>Ironie, „alter Preis“-Effekt</td><td>Linie je nach App leicht versetzt</td></tr></tbody></table></div>
+
+<h2>Woher die Stile kommen</h2>
+<p>Die Stile stammen aus drei unterschiedlichen Ecken des Unicode-Standards. Das erklärt, warum sie sich manchmal unterschiedlich verhalten:</p>
+<h3>1. Mathematische Alphabete</h3>
+<p>Fett, Kursiv, Schreibschrift, Fraktur, Doppelstrich und Schreibmaschine kommen aus dem Block „Mathematical Alphanumeric Symbols“. Einige Buchstaben waren schon vorher in Unicode enthalten – etwa ℌ, ℜ oder ℂ – und wurden deshalb an anderer Stelle einsortiert. Der Generator setzt diese Lücken automatisch richtig zusammen.</p>
+<h3>2. Sonderblöcke</h3>
+<p>Eingekreiste Buchstaben stammen aus dem Block für umschlossene alphanumerische Zeichen, die Vollbreite-Variante aus dem Bereich für ostasiatische Schriften. Kapitälchen setzen sich aus phonetischen Zeichen zusammen, die eigentlich für Lautschrift gedacht sind.</p>
+<h3>3. Kombinierende Zeichen</h3>
+<p>Unterstrichen und Durchgestrichen sind keine eigenen Buchstaben. Hier wird hinter jedes Zeichen eine unsichtbare Linie gehängt. Vorteil: Das funktioniert auch mit ä, ö, ü und ß. Nachteil: Die Linie kann je nach App leicht verrutschen.</p>
+
+<h2>Lesbarkeit: worauf es ankommt</h2>
+<p>Je stärker ein Stil vom gewohnten Schriftbild abweicht, desto langsamer wird gelesen. Für Text, den Menschen wirklich lesen sollen, bleiben Fett und Schreibmaschine die sichersten Kandidaten. Fraktur und Schreibschrift wirken am besten bei einzelnen Wörtern mit wenigen Großbuchstaben.</p>
+<div class="box"><p><strong>Praxis-Test:</strong> Schau dir deinen Text auf dem Handy aus einer Armlänge Abstand an. Wenn du ihn nicht sofort lesen kannst, können es deine Follower auch nicht.</p></div>
+
+<h2>Weiter geht’s</h2>
+<div class="grid">
+<a href="/"><strong>Zum Generator</strong><span>Eigenen Text in alle Stile umwandeln</span></a>
+<a href="/anleitung/"><strong>Anleitung</strong><span>Schriften in Apps einfügen</span></a>
+<a href="/faq/"><strong>FAQ</strong><span>Antworten auf typische Probleme</span></a>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<ul><li><a href="/">Generator</a></li><li><a href="/schriftarten/" aria-current="page">Schriftarten</a></li><li><a href="/anleitung/">Anleitung</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/ueber/">Über das Projekt</a></li></ul>
+<p>Zeichenwerk – ein kleiner, werbefreier Unicode-Schriftgenerator. Alles läuft direkt in deinem Browser.</p>
+</div></footer>
+
+</body>
+</html>
