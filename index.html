@@ -1,433 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta name="google-site-verification" content="3ekTBp7R8aUaY5ILg_I0jRyYitNDLFvPtT56cFwWhDc" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schriftgenerator: Kreative Instagram Schriften &amp; Unicode-Fonts</title>
-    <meta name="description" content="Mit unserem Schriftgenerator veränderst du deine Instagram Schrift im Handumdrehen. Entdecke fancy Fonts, kopiere kreative Schriftarten für Bios, Captions, TikTok &amp; WhatsApp!">
-    <meta name="keywords" content="schriftgenerator, instagram schrift, schrift generator, instagram schriftgenerator, kreative schriftarten, instagram fonts, fancy text generator">
-    <meta name="author" content="Schriftsgenerator Redaktion">
-    <link rel="canonical" href="https://schriftgenerator-pearl.vercel.app/">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Schriftgenerator: Kreative Instagram Schriften &amp; Unicode-Fonts">
-    <meta property="og:description" content="Verwandle normalen Text in stylische Schriftarten. Perfekt für Instagram, TikTok und WhatsApp. Jetzt ausprobieren!">
-    <meta property="og:url" content="https://schriftgenerator-pearl.vercel.app/">
-    <meta property="og:site_name" content="Schriftsgenerator">
-    <meta property="og:locale" content="de_DE">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Schriftgenerator: Kreative Instagram Schriften &amp; Unicode-Fonts">
-    <meta name="twitter:description" content="Verwandle normalen Text in stylische Schriftarten. Perfekt für Instagram, TikTok und WhatsApp. Jetzt ausprobieren!">
-
-    <style>
-        :root {
-            --primary-color: #4a148c;
-            --secondary-color: #ff4081;
-            --text-color: #333333;
-            --bg-color: #f9f9f9;
-            --card-bg: #ffffff;
-            --border-color: #dddddd;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        article {
-            background-color: var(--card-bg);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-top: 30px;
-            border-bottom: 2px solid var(--bg-color);
-            padding-bottom: 8px;
-        }
-        h3 {
-            color: var(--secondary-color);
-            font-size: 1.4rem;
-            margin-top: 25px;
-        }
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        ul, ol {
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-        }
-        th, td {
-            border: 1px solid var(--border-color);
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: var(--bg-color);
-            color: var(--primary-color);
-        }
-        .cta-box {
-            background: linear-gradient(135deg, #f3e5f5, #fce4ec);
-            border-left: 5px solid var(--secondary-color);
-            padding: 25px;
-            border-radius: 4px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        .cta-box a {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: transform 0.2s;
-        }
-        .cta-box a:hover {
-            transform: scale(1.05);
-        }
-        .faq-section {
-            margin-top: 40px;
-        }
-        .faq-item {
-            background-color: var(--bg-color);
-            padding: 20px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-        .faq-item h4 {
-            margin: 0 0 10px 0;
-            color: var(--primary-color);
-            font-size: 1.1rem;
-        }
-        .faq-item p {
-            margin: 0;
-        }
-        footer {
-            background-color: #222222;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-    </style>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          "@id": "https://schriftgenerator-pearl.vercel.app/#article",
-          "isPartOf": {
-            "@id": "https://schriftgenerator-pearl.vercel.app/"
-          },
-          "headline": "Schriftgenerator: Kreative Instagram Schriften & Unicode-Fonts",
-          "description": "Mit unserem Schriftgenerator veränderst du deine Instagram Schrift im Handumdrehen. Entdecke fancy Fonts, kopiere kreative Schriftarten für Bios, Captions, TikTok & WhatsApp!",
-          "inLanguage": "de-DE",
-          "mainEntityOfPage": "https://schriftgenerator-pearl.vercel.app/",
-          "author": {
-            "@type": "Organization",
-            "name": "Schriftsgenerator Redaktion"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Schriftsgenerator"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://schriftgenerator-pearl.vercel.app/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Was ist ein Schriftgenerator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ein Schriftgenerator ist ein Online-Tool, das herkömmlichen Text in mathematische und stilistische Unicode-Symbole umwandelt. Dadurch entstehen optisch neue Schriftarten, die kopiert und auf Plattformen wie Instagram, TikTok oder WhatsApp eingefügt werden können."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Warum funktioniert die Instagram Schrift auf manchen Handys nicht?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da die generierten Texte auf Unicode basieren, müssen die Betriebssysteme der Endgeräte diese spezifischen Symbole unterstützen. Ältere Android- oder iOS-Versionen verfügen manchmal nicht über die aktuellen Zeichensätze, weshalb stattdessen leere Kästchen (Tofu-Blöcke) angezeigt werden."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Kostet die Nutzung eines Schriftgenerators Geld?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nein, die Nutzung unseres Fancy Text Generators auf schriftsgenerator.com ist komplett kostenlos. Du kannst beliebig viele Texte konvertieren, kopieren und plattformübergreifend verwenden."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Sind diese kreativen Schriftarten gut für SEO?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Auf Webseiten sollten Unicode-Spielereien defensiv eingesetzt werden. Suchmaschinen wie Google lesen die Symbole oft anders als Standardtext, was die Barrierefreiheit und die Indexierung negativ beeinflussen kann. Für Social Media (Instagram, TikTok) spielen sie jedoch eine zentrale Rolle für das Engagement."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Kann ich die Instagram Schriftarten auch in Captions nutzen?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ja, absolut. Du kannst die transformierten Schriftarten sowohl in deiner Biografie als auch in den Bildunterschriften (Captions), Kommentaren und Direct Messages (DMs) einfügen."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Was ist der Unterschied zwischen echten Fonts und Unicode-Schriften?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Echte Fonts sind Schriftdateien (.ttf, .otf), die auf einem System installiert sein müssen. Ein Unicode-Schriftgenerator hingegen formatiert keine echten Schriftarten um, sondern ersetzt die Buchstaben durch eigenständige Sonderzeichen, die weltweit standardisiert sind."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Kann mein Social-Media-Account durch Sonderzeichen gesperrt werden?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nein, die Verwendung von Unicode-Zeichen bricht keine Richtlinien von Instagram oder TikTok. Solange die Inhalte selbst nicht gegen die Community-Richtlinien verstoßen, ist das Styling absolut sicher."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Unterstützt Discord diese ausgefallenen Schriftarten?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ja, in Discord-Usernames, Server-Namen und Textkanälen lassen sich Unicode-Zeichen hervorragend integrieren, um dem Profil einen individuellen Gaming-Look zu verleihen."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schriftgenerator zum Kopieren & Einfügen – 17 Unicode-Stile | Zeichenwerk</title>
+<meta name="description" content="Kostenloser Schriftgenerator: Text eingeben und in 17 Unicode-Stilen kopieren – fett, kursiv, Fraktur, Schreibschrift. Mit Tipps zu Umlauten und ß.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schriftgenerator-pearl.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3a2f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23f3c969'%3EZ%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Schriftgenerator zum Kopieren & Einfügen – 17 Unicode-Stile | Zeichenwerk">
+<meta property="og:description" content="Kostenloser Schriftgenerator: Text eingeben und in 17 Unicode-Stilen kopieren – fett, kursiv, Fraktur, Schreibschrift. Mit Tipps zu Umlauten und ß.">
+<meta property="og:url" content="https://schriftgenerator-pearl.vercel.app/">
+<meta property="og:site_name" content="Zeichenwerk">
+<meta name="theme-color" content="#1d3a2f">
+<style>
+:root{--bg:#f7f4ee;--card:#fffdf9;--ink:#1c1f1d;--muted:#5d655f;--line:#e2ddd2;--accent:#1d3a2f;--accent-2:#c8902b;--soft:#eef2ec;--radius:14px}
+@media (prefers-color-scheme:dark){:root{--bg:#121513;--card:#1a1e1b;--ink:#ecefe9;--muted:#a3aba5;--line:#2c322e;--accent:#9fd1b5;--accent-2:#f3c969;--soft:#1f2621}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent-2)}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+header.site{border-bottom:1px solid var(--line);background:var(--card)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none}
+.logo span{color:var(--accent-2)}
+nav ul{display:flex;flex-wrap:wrap;gap:4px 18px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a[aria-current=page]{color:var(--ink);font-weight:600}
+main{padding:32px 0 48px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.2;margin:0 0 12px}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.3;margin:44px 0 10px}
+h3{font-size:1.1rem;margin:26px 0 6px}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 24px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.tool label{font-weight:600;display:block;margin-bottom:6px}
+.tool textarea{width:100%;min-height:84px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:var(--bg);color:var(--ink)}
+.tool textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.hint{font-size:.88rem;color:var(--muted);margin:8px 0 0}
+.results{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.results li{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg)}
+.results .name{font-size:.78rem;color:var(--muted);min-width:110px}
+.results .out{flex:1;font-size:1.15rem;word-break:break-word;min-width:0}
+.results button{border:0;background:var(--accent);color:var(--card);border-radius:8px;padding:7px 12px;font:600 .85rem system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.results button.ok{background:var(--accent-2);color:#1c1f1d}
+@media (max-width:560px){.results li{flex-wrap:wrap}.results .name{min-width:100%}}
+.box{background:var(--soft);border-radius:var(--radius);padding:16px 18px;margin:20px 0}
+.box p:first-child{margin-top:0}.box p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+.tablewrap{overflow-x:auto}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.85rem;color:var(--muted);font-weight:600}
+.cta{display:inline-block;background:var(--accent);color:var(--card);padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;margin:6px 0}
+.cta:hover{color:var(--card);opacity:.92}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--ink)}
+.grid a strong{display:block;margin-bottom:4px}
+.grid a span{color:var(--muted);font-size:.92rem}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600}
+ol li,ul li{margin:4px 0}
+footer.site{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;background:var(--card)}
+footer.site ul{list-style:none;padding:0;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Zeichenwerk", "url": "https://schriftgenerator-pearl.vercel.app/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Browser", "inLanguage": "de", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Unicode-Schriftgenerator zum Kopieren und Einfügen mit 17 Stilen."}</script>
 </head>
 <body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/">Zeichen<span>werk</span></a>
+<nav aria-label="Hauptnavigation"><ul><li><a href="/" aria-current="page">Generator</a></li><li><a href="/schriftarten/">Schriftarten</a></li><li><a href="/anleitung/">Anleitung</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/ueber/">Über das Projekt</a></li></ul></nav>
+</div></header>
+<main><div class="wrap">
 
-<header>
-    <h1>Der ultimative Schriftgenerator für Social Media</h1>
-</header>
+<h1>Schriftgenerator zum Kopieren &amp; Einfügen</h1>
+<p class="lead">Text eintippen, Stil wählen, kopieren – fertig. Zeichenwerk wandelt normale Buchstaben in 17 Unicode-Stile um, die du in Bio, Status, Nicknames und Nachrichten einfügen kannst. Ohne Anmeldung, ohne App.</p>
 
-<main>
-    <article>
-        <section>
-            <h2>Die Evolution der digitalen Kommunikation: Warum Standard-Text nicht mehr reicht</h2>
-            <p>In der heutigen, visuell überladenen digitalen Landschaft ist Aufmerksamkeit die härteste Währung. Ob auf Instagram, TikTok, WhatsApp oder in Gaming-Communitys – wir werden sekündlich mit Inhalten überschwemmt. Wer im endlosen Feed der Nutzer auffallen möchte, muss visuelle Akzente setzen. Hier kommt der klassische <strong>Schriftgenerator</strong> ins Spiel. Dieses Tool erlaubt es uns, die starren Design-Vorgaben der großen Plattformen zu durchbrechen und Texten eine ganz eigene Persönlichkeit zu verleihen.</p>
-            <p>Viele Anwender fragen sich, wie Profile es schaffen, kursive, fett gedruckte oder komplett verzierte Buchstaben in ihrer Biografie zu nutzen, obwohl die App selbst keine Formatierungsoptionen anbietet. Das Geheimnis liegt nicht in komplexen Programmierungen, sondern in intelligenten Web-Tools, die sich ein globales System zunutze machen: Unicode. Ein moderner <strong>schrift generator</strong> verwandelt alltägliche Alphabete in faszinierende Design-Elemente.</p>
-        </section>
+<section class="tool" aria-label="Schriftgenerator">
+<label for="eingabe">Dein Text</label>
+<textarea id="eingabe" placeholder="Dein Text hier" autocomplete="off" spellcheck="false"></textarea>
+<p class="hint">Tipp: Umlaute (ä, ö, ü) und das ß bleiben unverändert – warum, erklären wir <a href="#umlaute">weiter unten</a>.</p>
+<ul class="results" id="ergebnisse" aria-live="polite"><li><span class="name">Fett (Serif)</span><span class="out">𝐃𝐞𝐢𝐧 𝐓𝐞𝐱𝐭 𝐡𝐢𝐞𝐫</span></li><li><span class="name">Kursiv (Serif)</span><span class="out">𝐷𝑒𝑖𝑛 𝑇𝑒𝑥𝑡 ℎ𝑖𝑒𝑟</span></li><li><span class="name">Fett (Sans)</span><span class="out">𝗗𝗲𝗶𝗻 𝗧𝗲𝘅𝘁 𝗵𝗶𝗲𝗿</span></li><li><span class="name">Schreibschrift</span><span class="out">𝒟ℯ𝒾𝓃 𝒯ℯ𝓍𝓉 𝒽𝒾ℯ𝓇</span></li><li><span class="name">Fraktur</span><span class="out">𝔇𝔢𝔦𝔫 𝔗𝔢𝔵𝔱 𝔥𝔦𝔢𝔯</span></li><li><span class="name">Doppelstrich</span><span class="out">𝔻𝕖𝕚𝕟 𝕋𝕖𝕩𝕥 𝕙𝕚𝕖𝕣</span></li><li><span class="name">Schreibmaschine</span><span class="out">𝙳𝚎𝚒𝚗 𝚃𝚎𝚡𝚝 𝚑𝚒𝚎𝚛</span></li><li><span class="name">Kapitälchen</span><span class="out">ᴅᴇɪɴ ᴛᴇxᴛ ʜɪᴇʀ</span></li></ul>
+</section>
 
-        <section>
-            <h2>Was ist ein Schriftgenerator und wie funktioniert er technisch?</h2>
-            <p>Ein webbasierter schriftgenerator ist ein Tool, das eingegebenen Text in Echtzeit analysiert und die Standard-Buchstaben (A-Z, a-z) durch visuell modifizierte Zeichen ersetzt. Entgegen dem ersten Eindruck werden hierbei keine neuen Schriftdateien (wie TrueType- oder OpenType-Fonts) geladen. Das Kopieren von echten Schriftdateien in ein Textfeld auf Instagram ist technisch unmöglich, da die Plattformen nur reinen Text erlauben.</p>
-            
-            <h3>Das Fundament: Der Unicode-Standard</h3>
-            <p>Die Magie hinter jedem <strong>fancy text generator</strong> basiert auf dem sogenannten Unicode-Standard. Unicode ist ein internationaler Code-Standard, der für jedes sinntragende Zeichen oder Textelement aller bekannten Schriftkulturen einen digitalen Code festlegt. Ziel ist es, den Datenaustausch zwischen verschiedenen Plattformen, Betriebssystemen und Geräten zu vereinheitlichen. Weitere technische Details zu diesem weltweiten System finden sich auf der offiziellen Website des <a href="https://home.unicode.org/" target="_blank" rel="noopener noreferrer">Unicode Consortiums</a>.</p>
-            <p>Innerhalb dieses gigantischen Zeichensatzes existieren tausende mathematische, historische und stilistische Symbole. Ein <strong>instagram schriftgenerator</strong> nimmt nun beispielsweise ein simples "A" und tauscht es gegen ein mathematisch fettes "A" ($\mathbf{A}$) oder ein Fraktur-"A" ($\mathfrak{A}$) aus. Für den Computer oder das Smartphone bleibt es ein eindeutiges Zeichen, für das menschliche Auge wird es jedoch zu einer völlig neuen, kreativen Schriftart.</p>
-        </section>
+<h2>Wie aus einem „A“ ein 𝐀 wird</h2>
+<p>Viele denken, ein Schriftgenerator lädt neue Fonts. Das stimmt nicht – und es wäre auch gar nicht möglich, denn Apps wie Instagram oder WhatsApp lassen nur reinen Text zu. Stattdessen nutzt Zeichenwerk Zeichen, die bereits im Unicode-Standard existieren. Dort gibt es seit 2001 einen eigenen Block für <em>mathematische alphanumerische Symbole</em>: komplette Alphabete in Fett, Kursiv, Fraktur, Schreibschrift und weiteren Varianten. Gedacht waren sie für Formeln, in denen ein fettes 𝐱 etwas anderes bedeutet als ein kursives 𝑥.</p>
+<p>Der Generator tauscht jeden Buchstaben deines Textes gegen sein Gegenstück aus diesem Block. Für dein Handy ist 𝐀 also ein eigenes Zeichen mit eigener Nummer (U+1D400) – genau wie ein Emoji. Deshalb bleibt die Optik erhalten, egal wohin du den Text kopierst.</p>
 
-        <section>
-            <h2>Instagram Schrift: Das visuelle Statement für deinen Account</h2>
-            <p>Besonders im Bereich des Social-Media-Marketings hat sich das Phänomen der individuellen <strong><a href="https://schriftsgenerator.com/instagram-schrift/">instagram schrift</a></strong> zu einem unverzichtbaren Trend entwickelt. Der erste Eindruck entscheidet darüber, ob ein Besucher auf das Profil klickt, die Beiträge liest oder das Profil sofort wieder verlässt. Die standardisierte serifenlose Schriftart von Instagram wirkt oft steril und austauschbar.</p>
-            
-            <h3>Warum Instagram-Nutzer spezielle Schriftarten lieben</h3>
-            <ul>
-                <li><strong>Abhebung von der Masse:</strong> Wenn jeder die gleiche Standard-Schrift nutzt, fällt derjenige auf, der mit ästhetischen Kontrasten arbeitet.</li>
-                <li><strong>Strukturierung von Inhalten:</strong> Lange Textwüsten in Bios oder Captions lassen sich durch fette oder unterstrichene Passagen optisch gliedern.</li>
-                <li><strong>Emotionale Ansprache:</strong> Eine verspielte Schrift transportiert eine völlig andere Stimmung als ein minimalistischer, cleaner Look.</li>
-                <li><strong>Branding:</strong> Unternehmen und Influencer nutzen spezifische <strong>instagram fonts</strong>, um ihre Markenidentität konsistent zu transportieren.</li>
-            </ul>
-        </section>
+<h2 id="umlaute">Was ist mit ä, ö, ü und ß?</h2>
+<p>Das ist die Schwachstelle, über die kaum jemand spricht: Die mathematischen Alphabete enthalten nur die 26 Grundbuchstaben A–Z. Für Umlaute und das ß gibt es <strong>keine</strong> fetten, kursiven oder Fraktur-Versionen. Ein Wort wie „Grüße“ wird darum zu 𝐆𝐫üß𝐞 mit normalem ü und ß mittendrin.</p>
+<div class="box">
+<p><strong>Unsere Empfehlung für deutsche Texte:</strong></p>
+<ul>
+<li>Für kurze Hervorhebungen Wörter ohne Umlaute wählen (z. B. „Fotografie“ statt „Fotografin für Hochzeiten“).</li>
+<li>Bei Bedarf die Umschreibung nutzen: ae, oe, ue, ss – wirkt in Fraktur sogar stimmig (𝔊𝔯𝔲𝔢𝔰𝔰𝔢).</li>
+<li>Kapitälchen und Unterstrichen funktionieren mit Umlauten am unauffälligsten.</li>
+</ul>
+</div>
 
-        <section>
-            <h2>Direkter Vergleich: Normaler Text vs. Instagram Schrift</h2>
-            <p>Um zu verdeutlichen, wie stark die optische Transformation durch einen <strong>schriftgenerator</strong> ist, zeigt die folgende Tabelle einen direkten Vergleich zwischen unformatiertem Standard-Text und verschiedenen beliebten Stilrichtungen, die aus Unicode-Zeichen zusammengesetzt sind.</p>
+<h2>Welcher Stil passt wofür?</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Stil</th><th>Wirkung</th><th>Gut geeignet für</th></tr></thead>
+<tbody>
+<tr><td>𝗙𝗲𝘁𝘁 (Sans)</td><td>klar, modern</td><td>Namen in der Bio, Zwischenüberschriften in Captions</td></tr>
+<tr><td>𝒮𝒸𝒽𝓇ℯ𝒾𝒷𝓈𝒸𝒽𝓇𝒾𝒻𝓉</td><td>elegant, persönlich</td><td>Beauty, Hochzeit, Lifestyle</td></tr>
+<tr><td>𝔉𝔯𝔞𝔨𝔱𝔲𝔯</td><td>historisch, markant</td><td>Gaming-Namen, Tattoo- und Metal-Themen</td></tr>
+<tr><td>𝚂𝚌𝚑𝚛𝚎𝚒𝚋𝚖𝚊𝚜𝚌𝚑𝚒𝚗𝚎</td><td>technisch, nüchtern</td><td>Tech-Profile, Code-Hinweise, Discord-Kanäle</td></tr>
+<tr><td>ᴋᴀᴘɪᴛäʟᴄʜᴇɴ</td><td>dezent, edel</td><td>Untertitel, Markennamen</td></tr>
+</tbody></table></div>
+<p>Alle 17 Stile mit Beispielen, Lesbarkeit und Kompatibilität findest du in der <a href="/schriftarten/">Übersicht der Schriftarten</a>.</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Stilrichtung / Kategorie</th>
-                        <th>Normaler Text (Eingabe)</th>
-                        <th>Instagram Schrift (Ausgabe)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Standard (Unformatiert)</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>Willkommen auf meinem Profil</td>
-                    </tr>
-                    <tr>
-                        <td>Mathematisch Fett (Serifenlos)</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>𝙒𝙞𝙡𝙡𝙠𝙤𝙢𝙢𝙚𝙣 𝙖𝙪𝙛 𝙢𝙚𝙞𝙣𝙚𝙢 𝙋𝙧𝙤𝙛𝙞𝙡</td>
-                    </tr>
-                    <tr>
-                        <td>Kursive Eleganz (Script)</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>𝒲𝒾𝓁𝓁𝓀ℴ𝓂𝓂ℯ𝓃 𝒶𝓊𝒻 𝓂ℯ𝒾𝓃ℯ𝓂 𝒫𝓇ℴ𝒻𝒾𝓁</td>
-                    </tr>
-                    <tr>
-                        <td>Fraktur / Gothic Style</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>𝔚𝔦𝔩𝔩𝔨𝔬𝔪𝔪𝔢𝔫 𝔞𝔲𝔣 𝔪𝔢𝔦𝔫𝔢𝔪 𝔓𝔯𝔬𝔣𝔦𝔩</td>
-                    </tr>
-                    <tr>
-                        <td>Double Struck (Kreide)</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>𝕎𝕚𝕝𝕝𝕜𝕠𝕞𝕞𝕖𝕟 𝕒𝕦𝕗 𝕞𝕖𝕚𝕟𝕖𝕞 ℙ𝕣𝕠𝕗𝕚𝕝</td>
-                    </tr>
-                    <tr>
-                        <td>Underline / Unterstrichen</td>
-                        <td>Willkommen auf meinem Profil</td>
-                        <td>W̲i̲l̲l̲k̲o̲m̲m̲e̲n̲ ̲a̲u̲f̲ ̲m̲e̲i̲n̲e̲m̲ ̲P̲r̲o̲f̲i̲l̲</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+<h2>Drei Regeln, damit es nicht billig wirkt</h2>
+<ol>
+<li><strong>Sparsam bleiben.</strong> Ein hervorgehobenes Wort fällt auf, ein ganzer Absatz in Schreibschrift wird übersprungen.</li>
+<li><strong>Einen Stil wählen.</strong> Wer Fett, Fraktur und Eingekreist mischt, verliert jede Linie. Ein fester Stil wird zum Wiedererkennungszeichen.</li>
+<li><strong>An Screenreader denken.</strong> Vorleseprogramme sprechen Sonderzeichen oft einzeln oder gar nicht aus. Wichtige Infos wie Telefonnummer, Öffnungszeiten oder Links deshalb immer in normaler Schrift schreiben.</li>
+</ol>
+<p>Wie du die Texte konkret in Instagram, TikTok, WhatsApp und Discord einfügst, zeigt die <a href="/anleitung/">Schritt-für-Schritt-Anleitung</a>.</p>
 
-        <section>
-            <h2>Vorteile für das Social-Media-Branding</h2>
-            <p>Wer professionell im Internet agiert, weiß, dass Branding weit über ein Logo hinausgeht. Es umfasst die Tonalität, die Bildsprache und eben auch die Typografie. Da Instagram und Co. es nicht erlauben, eigene Hausschriften hochzuladen, bietet der <strong>instagram schriftgenerator</strong> die perfekte Brücke. Durch den gezielten Einsatz von Unicode-Stilen kreierst du einen Wiedererkennungswert, der sich durch all deine digitalen Kanäle zieht.</p>
-            <p>Ein konsistentes Auftreten signalisiert Professionalität und Detailverliebtheit. Wenn deine Follower schon am Schriftstil in den Captions erkennen, dass ein Beitrag von dir stammt, hast du ein exzellentes visuelles Branding etabliert.</p>
-        </section>
+<h2>Mehr Stile und Vorlagen</h2>
+<p>Zeichenwerk ist bewusst schlank gehalten. Wenn du eine größere Auswahl an Stilen, Symbolen und Vorlagen suchst, wirst du beim großen Bruder fündig:</p>
+<p><a class="cta" href="https://schriftsgenerator.com/">Jetzt Texte kostenlos generieren</a></p>
+<p>Speziell für dein Profil gibt es dort außerdem eine eigene Seite zur <a href="https://schriftsgenerator.com/instagram-schrift/">instagram schrift</a> mit Bio-Ideen und passenden Stilen für Namen und Captions.</p>
 
-        <section>
-            <h2>Kreative Anwendungsbereiche im Detail</h2>
-            <p>Die Einsatzmöglichkeiten für <strong>kreative schriftarten</strong> beschränken sich längst nicht mehr nur auf eine Plattform. Überall dort, wo digitaler Text eingegeben werden kann, lassen sich die Ergebnisse aus dem Generator nutzen.</p>
-            
-            <h3>Instagram Bios</h3>
-            <p>Die Biografie ist deine digitale Visitenkarte. Du hast nur wenige Sekunden Zeit, um Profilbesucher zu überzeugen. Nutze fette Schriftarten für deinen Namen oder wichtige Keywords (z.B. deine Nische wie 𝔽𝕠𝕥𝕠𝕘𝕣𝕒𝕗𝕚𝕖 oder 𝙈𝙖𝙧𝙠𝙚𝙩𝙞𝙣𝙜), um sofort ins Auge zu springen.</p>
+<h2>Weiterlesen</h2>
+<div class="grid">
+<a href="/schriftarten/"><strong>Alle Schriftarten</strong><span>17 Stile im Vergleich – Lesbarkeit und Einsatz</span></a>
+<a href="/anleitung/"><strong>Anleitung</strong><span>So fügst du Schriften in Apps ein</span></a>
+<a href="/faq/"><strong>Häufige Fragen</strong><span>Kästchen, Umlaute, Sperren &amp; mehr</span></a>
+</div>
 
-            <h3>Instagram Captions</h3>
-            <p>In den Bildunterschriften geht die Kernbotschaft oft unter, wenn sie in einem Block aus Standard-Text versteckt ist. Setze Akzente, indem du Zwischenüberschriften im Text fett oder kursiv gestaltest oder Call-to-Actions (z.B. 𝙇𝙞𝙣𝙠 𝙞𝙣 𝙙𝙚𝙧 𝘽𝙞𝙤!) optisch hervorhebst.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<ul><li><a href="/" aria-current="page">Generator</a></li><li><a href="/schriftarten/">Schriftarten</a></li><li><a href="/anleitung/">Anleitung</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/ueber/">Über das Projekt</a></li></ul>
+<p>Zeichenwerk – ein kleiner, werbefreier Unicode-Schriftgenerator. Alles läuft direkt in deinem Browser.</p>
+</div></footer>
 
-            <h3>TikTok Profiles</h3>
-            <p>TikTok ist extrem schnelllebig und visuell getrieben. Ein kreativer Name im Profil, der mithilfe eines Generators erstellt wurde, bleibt im Gedächtnis der User hängen, wenn sie durch die Kommentare scrollen.</p>
-
-            <h3>WhatsApp Status</h3>
-            <p>Teile deine täglichen Gedanken oder geschäftliche Updates im WhatsApp Status mit auffälligen Fonts. So hebst du dich von den gewöhnlichen Text-Updates deiner Kontakte ab.</p>
-
-            <h3>Facebook Posts</h3>
-            <p>Der Facebook-Algorithmus belohnt Interaktionen. Beiträge, die durch ein einzigartiges Text-Design aus dem klassischen blauen und weißen Einheitsbrei hervorstechen, erzielen nachweislich höhere Klick- und Like-Raten.</p>
-
-            <h3>Discord Usernames &amp; Server-Strukturen</h3>
-            <p>Für Gamer und Community-Manager ist Discord das Zuhause. Mit einem verzierten Usernamen fällst du auf jedem Server sofort auf. Auch die Benennung von Text- und Voice-Kanälen lässt sich durch Unicode-Symbole extrem übersichtlich und ästhetisch gestalten.</p>
-
-            <h3>Gaming Profiles</h3>
-            <p>Egal ob Steam, PlayStation Network, Xbox Live oder In-Game-Namen in kompetitiven Shootern und MMOs – ein einzigartiger Nickname, generiert durch clevere Tools, untermauert deinen Status in der Gaming-Welt.</p>
-        </section>
-
-        <div class="cta-box">
-            <h2>Bereit, deine Texte zu transformieren?</h2>
-            <p>Verleihe deinen Social-Media-Profilen jetzt das gewisse Etwas. Nutze unseren kostenlosen Service und erstelle im Handumdrehen einzigartige Designs zum Kopieren.</p>
-            <a href="https://schriftsgenerator.com/">Jetzt Texte kostenlos generieren</a>
-        </div>
-
-        <section class="faq-section">
-            <h2>Häufig gestellte Fragen (FAQ) – Alles zum Thema Schriftgenerator</h2>
-            
-            <div class="faq-item">
-                <h4>Was ist ein Schriftgenerator?</h4>
-                <p>Ein Schriftgenerator ist ein webbasiertes Tool, das normalen Text in Echtzeit in stylische Unicode-Zeichen umwandelt. Diese Zeichen sehen aus wie neue Schriftarten, werden von Plattformen aber als universelle Symbole verarbeitet.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Warum funktioniert die Instagram Schrift auf manchen Handys nicht?</h4>
-                <p>Da die modifizierten Schriften auf Unicode basieren, hängt die Darstellung vom Betriebssystem des Empfänger-Geräts ab. Sehr alte Smartphones oder nicht aktualisierte Systeme verfügen manchmal nicht über die passenden Zeichensätze, weshalb sie stattdessen Fragezeichen oder leere Kästchen (sogenannte Tofu-Blöcke) anzeigen.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Kostet die Nutzung eines Schriftgenerators Geld?</h4>
-                <p>Nein, die Nutzung unseres Generators ist für dich vollkommen kostenfrei. Du kannst unbegrenzt viele Texte eingeben, formatieren und plattformübergreifend kopieren.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Sind diese kreativen Schriftarten gut für SEO?</h4>
-                <p>Für das klassische Web-SEO (Suchmaschinenoptimierung auf Google) sollten Unicode-Schriften nur sehr sparsam eingesetzt werden. Suchmaschinen interpretieren die mathematischen Symbole oft anders als reguläre Buchstaben, was die Auffindbarkeit der Webseite und die Barrierefreiheit für Screenreader beeinträchtigen kann. Für das Social-Media-Interne-SEO (Sichtbarkeit im App-Feed) sind sie jedoch unbedenklich.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Kann ich die Instagram Schriftarten auch in Captions nutzen?</h4>
-                <p>Ja, absolut. Die generierten Zeichen lassen sich problemlos in Bios, Captions (Bildunterschriften), Kommentaren und sogar in Direct Messages (DMs) einfügen.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Was ist der Unterschied zwischen echten Fonts und Unicode-Schriften?</h4>
-                <p>Echte Fonts (.ttf, .otf) sind Software-Dateien, die auf einem Computer installiert werden müssen, damit das System sie rendern kann. Ein Unicode-Schriftgenerator hingegen nutzt bereits im System integrierte, alternative Sonderzeichen, weshalb keine Installation auf den Endgeräten der Betrachter notwendig ist.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Kann mein Social-Media-Account durch Sonderzeichen gesperrt werden?</h4>
-                <p>Nein, die Verwendung von standardisierten Unicode-Zeichen verstößt gegen keine Richtlinien von Instagram, TikTok oder Facebook. Es handelt sich um ein rein visuelles Stilmittel.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Unterstützt Discord diese ausgefallenen Schriftarten?</h4>
-                <p>Ja, Discord bietet hervorragenden Support für Unicode-Zeichen. Du kannst damit sowohl deinen Profilnamen als auch die Namen von Text- und Sprachkanälen kreativ verzieren.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Fazit: Maximale visuelle Wirkung mit minimalem Aufwand</h2>
-            <p>Die Nutzung von Tools zur Textgestaltung ist im modernen digitalen Zeitalter weit mehr als eine reine Spielerei. Es ist ein mächtiges Instrument für Content Creator, Brands und Privatpersonen, um Individualität auszudrücken und visuelle Barrieren im Feed zu brechen. Mit unserem intuitiven System gelingt der Wechsel von langweiligem Standard-Text zu aufmerksamkeitsstarken Designs in Sekundenschnelle. Setze Akzente, strukturiere deine Inhalte intelligenter und maximiere dein digitales Engagement.</p>
-        </section>
-    </article>
-</main>
-
-<footer>
-<p>&copy; 2026 <a href="https://schriftsgenerator.com/">Schriftsgenerator.com</a>. Alle Rechte vorbehalten. Optimiert für Barrierefreiheit und modernes Web-Design.</p>
-</footer>
+<script>
+(function(){
+  var A=65,a=97,Z0=48;
+  function mk(up,low,dig,exc){
+    exc=exc||{};
+    return function(s){
+      var r='';
+      for(var ch of s){
+        if(exc[ch]){r+=exc[ch];continue}
+        var c=ch.codePointAt(0);
+        if(up!=null&&c>=65&&c<=90) r+=String.fromCodePoint(up+c-65);
+        else if(low!=null&&c>=97&&c<=122) r+=String.fromCodePoint(low+c-97);
+        else if(dig!=null&&c>=48&&c<=57) r+=String.fromCodePoint(dig+c-48);
+        else r+=ch;
+      }
+      return r;
+    };
+  }
+  function comb(mark){return function(s){var r='';for(var ch of s){r+=ch+(ch===' '?'':mark)}return r}}
+  var sc='ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ';
+  function smallcaps(s){var r='';for(var ch of s){var c=ch.toLowerCase().codePointAt(0);r+=(c>=97&&c<=122)?sc[c-97]:ch}return r}
+  function circled(s){var r='';for(var ch of s){var c=ch.codePointAt(0);
+    if(c>=65&&c<=90)r+=String.fromCodePoint(0x24B6+c-65);
+    else if(c>=97&&c<=122)r+=String.fromCodePoint(0x24D0+c-97);
+    else if(c===48)r+='⓪';else if(c>=49&&c<=57)r+=String.fromCodePoint(0x2460+c-49);else r+=ch}return r}
+  var styles=[
+    ['Fett (Serif)',mk(0x1D400,0x1D41A,0x1D7CE)],
+    ['Kursiv (Serif)',mk(0x1D434,0x1D44E,null,{h:'ℎ'})],
+    ['Fett kursiv',mk(0x1D468,0x1D482,null)],
+    ['Fett (Sans)',mk(0x1D5D4,0x1D5EE,0x1D7EC)],
+    ['Kursiv (Sans)',mk(0x1D608,0x1D622,null)],
+    ['Fett kursiv (Sans)',mk(0x1D63C,0x1D656,null)],
+    ['Schreibschrift',mk(0x1D49C,0x1D4B6,null,{B:'ℬ',E:'ℰ',F:'ℱ',H:'ℋ',I:'ℐ',L:'ℒ',M:'ℳ',R:'ℛ',e:'ℯ',g:'ℊ',o:'ℴ'})],
+    ['Schreibschrift fett',mk(0x1D4D0,0x1D4EA,null)],
+    ['Fraktur',mk(0x1D504,0x1D51E,null,{C:'ℭ',H:'ℌ',I:'ℑ',R:'ℜ',Z:'ℨ'})],
+    ['Fraktur fett',mk(0x1D56C,0x1D586,null)],
+    ['Doppelstrich',mk(0x1D538,0x1D552,0x1D7D8,{C:'ℂ',H:'ℍ',N:'ℕ',P:'ℙ',Q:'ℚ',R:'ℝ',Z:'ℤ'})],
+    ['Schreibmaschine',mk(0x1D670,0x1D68A,0x1D7F6)],
+    ['Kapitälchen',smallcaps],
+    ['Eingekreist',circled],
+    ['Breit (Vollbreite)',mk(0xFF21,0xFF41,0xFF10)],
+    ['Unterstrichen',comb('̲')],
+    ['Durchgestrichen',comb('̶')]
+  ];
+  var input=document.getElementById('eingabe'),list=document.getElementById('ergebnisse');
+  function render(){
+    var t=input.value||'Dein Text hier';
+    list.innerHTML='';
+    styles.forEach(function(st){
+      var li=document.createElement('li');
+      var n=document.createElement('span');n.className='name';n.textContent=st[0];
+      var o=document.createElement('span');o.className='out';o.textContent=st[1](t);
+      var b=document.createElement('button');b.type='button';b.textContent='Kopieren';
+      b.setAttribute('aria-label',st[0]+' kopieren');
+      b.addEventListener('click',function(){copy(o.textContent,b)});
+      li.appendChild(n);li.appendChild(o);li.appendChild(b);list.appendChild(li);
+    });
+  }
+  function copy(txt,b){
+    function done(){b.textContent='Kopiert ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Kopieren';b.classList.remove('ok')},1400)}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(done,fallback)}else fallback();
+    function fallback(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}
+  }
+  input.addEventListener('input',render);
+  render();
+})();
+</script>
 
 </body>
 </html>
